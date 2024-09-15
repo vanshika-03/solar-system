@@ -1,0 +1,303 @@
+/* body{
+    background-image: url("images/axis.gif");
+    background-size: 100% 100%;
+    background-attachment: scroll;
+    min-height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+    background-position: center;
+    margin-top: 2rem;
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100vh;
+} */
+
+body{
+    /* position: relative;
+    display: flex;
+    width: 1300px; 
+    height:1000px;
+    background-image: url('images/axis.gif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: contain;
+     */
+     margin: 0;
+     padding: 0;
+}
+
+#bg
+{
+    position: relative;
+    display: flex;
+    width: 1300px; 
+    height:1000px;
+    background-image: url('images/axis.gif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+#bg-cover {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover; /* Makes the image cover the entire container */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-size: cover;
+}
+.planets{
+    display: flex;           
+}
+
+
+#mercury-img{
+    height:80px;
+    margin-top: 21.5rem;
+    position: absolute;
+    z-index: 1;
+}
+
+#mercury-img:hover{
+    filter: brightness(1.2);
+}
+
+#mercury:hover .about1{
+    visibility: visible;
+    opacity: 1;
+}
+
+#venus-img{
+    height: 100px;
+    margin-top: 24rem;
+    margin-left: 10.5rem;
+    position: absolute;
+}
+
+#earth-img{
+    height: 130px;
+    margin-top: 29rem;
+    margin-left: 21rem;
+    position: absolute;
+}
+#mars-img{
+    height: 90px;
+    margin-top: 25rem;
+    margin-left: 28rem;
+    position: absolute;
+}
+
+#jupiter-img{
+    height:140px;
+    margin-top: 15rem;
+    margin-left: 29rem;
+    position: absolute;
+}
+
+#saturn-img{
+    height:220px;
+    margin-top: 25rem;
+    margin-left: 39.9rem;
+    position: absolute;
+}
+#next4{
+    position: relative;
+}
+#uranus-img{
+    height: 130px;
+    margin-top: 19rem;
+    position: absolute;
+    margin-left: 49.5rem;
+}
+#neptune-img{
+    height: 137px;
+    margin-top: 24rem;
+    margin-left: 58rem;
+    position: absolute;
+}
+
+#sun{
+    height: 200px;
+    margin-top: 25rem;
+    margin-left: 4rem;
+    /* position: absolute; */
+}
+
+#mercury{
+    position: relative;
+}
+.about1{
+    height: 200px;
+    position: absolute;
+    margin-left: 2.5rem;
+    margin-top: 10rem;
+    opacity: 0; 
+    visibility: hidden;
+    z-index: 2;
+}
+
+#venus{
+    position: relative;
+}
+
+.about2{
+    height: 200px;
+    position: absolute;
+    margin-left: 12rem;
+    margin-top: 11rem;
+    opacity: 0; 
+    z-index: 2;
+}
+
+#venus-img:hover{
+    filter: brightness(1.2);
+}
+
+#venus:hover .about2{
+    visibility: visible ;
+    opacity: 1;
+}
+
+.about3{
+    height: 200px;
+    position: absolute;
+    margin-left: 12rem;
+    margin-top: 36rem;
+    opacity: 0;
+    z-index: 2;
+}
+#earth{
+    position: relative;
+}
+
+#earth-img:hover{
+    filter: brightness(1.1);
+}
+
+#earth:hover .about3{
+    visibility: visible ;
+    opacity: 1;
+}
+
+.about4{
+    height: 200px;
+    position: absolute;
+    margin-left: 18rem;
+    margin-top: 15rem;
+    opacity: 0;
+    z-index: 2;
+}
+
+#mars-img:hover{
+    filter: brightness(1.2);
+}
+
+#mars:hover .about4{
+    visibility: visible ;
+    opacity: 1;
+}
+
+.about5{
+    height: 200px;
+    position: absolute;
+    margin-left: 35rem;
+    margin-top: 5rem;
+    /* opacity: 0;  */
+    visibility: hidden;
+    z-index: 2;
+}
+
+#jupiter-img:hover{
+    filter: brightness(1.2);
+}
+
+#jupiter:hover .about5{
+    visibility: visible ;
+    opacity: 1;
+}
+
+#saturn{
+    position: relative;
+}
+
+.about6{
+    height: 200px;
+    position: absolute;
+    margin-left: 47rem;
+    margin-top: 17rem;
+    opacity: 0; 
+    visibility: hidden;
+    z-index: 2;
+}
+
+#saturn-img:hover{
+    filter: brightness(1.2);
+}
+
+#saturn:hover .about6{
+    visibility: visible ;
+    opacity: 1;
+}
+
+#uranus{
+    position: relative;
+}
+
+.about7{
+    height: 200px;
+    position: absolute;
+    margin-left: 53rem;
+    margin-top: 7.4rem;
+    opacity: 0;  
+    visibility: hidden;
+    z-index: 2;
+}
+
+#uranus-img:hover{
+    filter: brightness(1.2);
+}
+
+#uranus:hover .about7{
+    visibility: visible ;
+    opacity: 1;
+}
+
+#neptune{
+    position: relative;
+}
+
+.about8{
+    height: 200px;
+    position: absolute;
+    margin-left: 50rem;
+    margin-top: 31rem;
+    opacity: 0;  
+    visibility: hidden;
+    z-index: 2;
+}
+
+#neptune-img:hover{
+    filter: brightness(1.2);
+}
+
+#neptune:hover .about8{
+    visibility: visible ;
+    opacity: 1;
+}
+
+#sun:hover{
+    filter: brightness(1.2);
+}
+#sun-about:hover .about-sun{
+    opacity: 1;
+}
+.about-sun{
+    height: 200px;
+    margin-left: 0.5rem;
+    opacity: 0;
+}
